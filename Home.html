@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <title>ELECTRONS-OFFICIAL HOME PAGE</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="modern electronic circuits produced and designed by Electron Group. We offer other devices that we import, such as submarine motors.">
+        <meta name="keywords" content="Electrons, Electronics, boards, motor, submarine, submarine motors, circuits, Arduino, relay, relay module, Electrons group, microcontrollers, AVR, Avr, AVR programmer, Avr programmer, ASP, ESP, breadboards, batteries, LEDs, resistors, capacitors, volt regulator, programable electronic board, custom electronic boards, PCB, PCB design, electronic boards design, PCB in Egypt">
+        <meta name="author" content="Electrons group">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+
+
+
+        <style>
+
+
+/*activity section */
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*bodyy {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Open Sans';
+  background: #fafafa;
+}*/
+
+a {
+  color: inherit;
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.cardd {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+
+.cardd:hover {
+  transform: rotate(0);
+}
+
+.cardd h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.cardd p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.cardd .tags {
+  display: flex;
+}
+
+.cardd .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.cardd:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.cardd .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.cardd:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.cardd:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.cardd:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.cardd:hover {
+  color: var(--color);
+}
+
+.cardd:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+.cardd-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .cardd-grid-space .num {
+    /margin-left: 0;
+    /text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .cardd {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+/* scroll animation */
+:root {
+	--card-height: 40vw;
+	--card-margin: 4vw;
+	--card-top-offset: 1em;
+	--numcards: 4;
+	--outline-width: 0px;
+}
+
+#cards {
+	padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
+	margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+}
+
+#card_1 {
+	--index: 1;
+}
+
+#card_2 {
+	--index: 2;
+}
+
+#card_3 {
+	--index: 3;
+}
+
+#card_4 {
+	--index: 4;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--card-top-offset));
+}
+
+@supports (animation-timeline: works) {
+
+	@scroll-timeline cards-element-scrolls-in-sec1 {
+		source: selector(sec1);
+		scroll-offsets:
+			/* Start when the start edge touches the top of the scrollport */
+			selector(#cards) start 1,
+			/* End when the start edge touches the start of the scrollport */
+			selector(#cards) start 0
+		;
+		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
+		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+		time-range: 4s;
+	}
+
+	.card {
+		--index0: calc(var(--index) - 1); /* 0-based index */
+		--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+		--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+	}
+	
+	.card__content {
+		transform-origin: 50% 0%;
+		will-change: transform;
+
+		--duration: calc(var(--reverse-index0) * 1s);
+		--delay: calc(var(--index0) * 1s);
+
+		animation: var(--duration) linear scale var(--delay) forwards;
+		animation-timeline: cards-element-scrolls-in-sec1;
+	}
+
+	@keyframes scale {
+		to {
+			transform:
+				scale(calc(
+					1.1
+					-
+					calc(0.1 * var(--reverse-index))
+				));
+		}
+	}
+}
+
+
+
+/** PAGE STYLING **/
+
+* { /* Poor Man's Reset */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+sec1 {
+	background: rgb(58 29 43);
+	color: rgb(255, 255, 255);
+	text-align: center;
+
+	font-size: calc(1em + 0.5vw);
+}
+
+headd,
+main {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+headd{
+	height: 50vh;
+	display: grid;
+	place-items: center;
+}
+
+#cards {
+	list-style: none;
+	outline: calc(var(--outline-width) * 10) solid blue;
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--numcards), var(--card-height));
+	gap: var(--card-margin);
+}
+
+.card {
+	outline: var(--outline-width) solid hotpink;
+}
+
+.card__content {
+	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	background: rgb(255, 255, 255);
+	color: rgb(10, 5, 7);
+	border-radius: 1em;
+	overflow: hidden;
+
+	display: grid;
+	grid-template-areas: "text img";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+
+	align-items: stretch;
+	outline: var(--outline-width) solid lime;
+}
+
+.card__content > div {
+	grid-area: text;
+	width: 80%;
+	place-self: center;
+	text-align: left;
+
+	display: grid;
+	gap: 1em;
+	place-items: start;
+}
+
+.card__content > figure {
+	grid-area: img;
+	overflow: hidden;
+}
+
+.card__content > figure > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+h11 {
+	font-weight: 300;
+	font-size: 3.5em;
+}
+
+h22 {
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+pp {
+	font-family: sans-serif;
+	font-weight: 300;
+	line-height: 1.42;
+}
+
+.btn {
+	background: rgb(188 87 36);
+	color: rgb(255 255 255);
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.5em;
+	border-radius: 0.25em;
+}
+
+aside {
+	width: 50vw;
+	margin: 0 auto;
+	text-align: left;
+}
+
+aside p {
+	margin-bottom: 1em;
+}
+
+
+
+
+
+          .container{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "nav"
+            "content"
+            "footer"
+            ;
+          }
+          
+          .navarea{
+            grid-area: nav;
+            margin: 0vw;
+            /*opacity: 0.91;
+            border: 2px solid red*/
+          }
+
+          .topnav {
+            overflow: hidden;
+            background: rgb(250, 249, 246);
+            opacity: 81%;
+            /*border: 2px solid red;*/
+            margin: 0px;
+            position: fixed;
+            width: 100%;
+          }
+
+
+          .topnav a {
+            float: left;
+            /*display: block;*/
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 5px 10px;
+            margin-left: 3vw;
+            text-decoration: none;
+            font-size: 17px;
+            /*border: 2px solid blue;*/
+          }
+
+          .topnav a:hover{
+            /*background: #333333;*/
+            color: #e6e6e6;
+          }
+
+
+          .topnav a.active {
+            background-color: none;
+            color: #000000;
+            font-size: 17px;
+
+            /*border-bottom: 1px solid #b3b3b3;*/
+            /*text-decoration: underline;*/
+          }
+
+          .topnav .icon {
+            display: none;
+          }
+
+          @media screen and (max-width: 800px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+              float: right;
+              display: block;
+            }
+          }
+
+          @media screen and (max-width: 800px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+
+            .topnav.responsive a {
+              float: none;
+              display: block;
+              text-align: left;
+            }
+          }
+
+
+          .contentarea{
+            grid-area: content;
+           /* border: 2px solid black;*/
+            padding: 0.6vw 0vw 0vw 0vw;
+          }
+
+          @media screen and (max-width: 800px) {
+            .contentarea{padding: 8vw 0vw 0vw 0vw;}
+          }
+
+          .homeblocks{
+            display: grid;
+            grid-template-areas: 
+            "block1"
+            "block2"
+            "block3"
+            "block4"
+            "block5";
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+          }
+
+          .bl1{
+            grid-area: block1;
+            height: auto;
+            display: flex;
+            border-bottom: 1px solid #737373;
+            margin: 2vw;
+          }
+
+
+          .b1pic{
+            height: 16vw;
+            width: auto;
+            /*border: 2px solid black;*/
+          }
+
+
+          .b1tex{
+            height: auto;
+            width: auto;
+            /*border: 2px solid green;*/
+            color: #000000;
+            font-family: "Bigshot One",serif;
+            font-size: 3vw;
+            font-weight: 100;
+            font-style: normal; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .b1subtitle{
+            height: auto;
+            width: auto;
+            /*border: 2px solid green;*/
+            color: #070707;
+            font-family: "Bigshot One",serif;
+            font-size: 1.5vw;
+            font-weight: 100;
+            font-style: normal; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .b1subtitle2{
+            height: auto;
+            width: auto;
+            /*border: 2px solid green;*/
+            color: #070707;
+            font-family: "Allison", cursive;
+            font-size: 3vw;
+            font-weight: 100;
+            font-style: normal; 
+            display: flex;
+            justify-content: left;
+            align-items: left;
+          }
+
+
+
+
+
+          @media screen and (max-width: 800px) {
+            .b1tex{font-size: 4vw;}
+          }
+
+
+          .bl2{
+            grid-area: block2;
+            height: auto;
+            display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+               /*background: #c8e9ce;
+               border: 2px solid blue;*/
+               height: auto;
+               /*margin: 3vw;*/
+               padding: 0vw 3vw 0vw 3vw;
+
+            }
+
+            .b2text{
+            width: 55vw;
+            /*border: 2px solid green;*/
+            color: #000000;
+            font-size: medium;
+            font-weight: 500;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            float: right;
+          }
+
+
+
+          .b2image{
+               /*border: 2px solid #ff9900;*/
+               color: white;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               width: 35vw;
+               /*margin: 1.5vw;
+               padding: 2vw;*/
+          }
+
+          .b2pic{
+            height: 30vw;
+
+          }
+
+          @media only screen and (max-width: 700px) {
+            .b2text {font-size: 11px}
+          }
+
+
+          .bl3{
+            grid-area: block3;
+            /*border: 2px solid red; */
+            height: auto;
+          }
+
+      
+
+
+
+          .b31{
+            /*border: 2px solid yellow;*/
+            margin: 1.5vw;  
+            border-radius: 0.4vw;
+           /* width: 45%; */
+            height: 40vw;
+            background-color: #006e6d;
+          }
+
+          .b32{
+            /*border: 2px solid yellow;*/
+            margin: 1.5vw;   
+            border-radius: 0.4vw;
+            /*width: 45%;*/ 
+            height: 40vw;
+            background-color: #006e6d;
+          }
+
+
+          
+          .bl4{
+            grid-area: block4;
+            height: auto;
+            /*border: 2px solid black;*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            padding-top: 15vw;
+          }
+            
+      
+          .bl4title{
+            text-align: center;
+            width: 100%;
+          }
+
+          .M3block{
+
+               /*border: 2px solid ;*/
+               display: grid;
+               background: #ff990000;
+               height: auto;
+               margin: 2vw;
+               justify-content: center;
+               justify-items: center;
+           }
+
+           .M3bimage{
+               width: 15vw;
+               height: auto;
+               /*border: 2px solid green;*/
+               display: flex;
+               justify-content: center;
+               background: rgba(0, 0, 0, 0);
+           }
+
+           .M3btext{
+               width: 20vw;
+               height: auto;
+               padding: 1vw 0vw 1vw 1vw;
+               color: #000000;
+               text-align: center;
+               /*border: 2px solid rgb(188, 204, 188);*/
+
+           }
+
+
+
+          .bl5{
+            grid-area: block5;
+            /*border: 2px solid red;*/
+            margin: 1.5vw;   
+            text-align: center;
+            padding-top: 5vw;
+          }
+
+          .footerarea{
+            grid-area: footer;
+            /*border: 2px solid red;*/
+            padding: 1vw 2vw 4vw 2vw;
+            background-color: rgb(250, 249, 246);
+            /*opacity: 0.91;*/
+          }
+
+          .footerlinksarea{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            /*border: 2px solid black;*/
+            margin: 2px;
+          }
+
+          .footersubtext{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #000000;
+            padding: 3vw 0vw 0vw 0vw ;
+            margin: 2px;
+          }
+          
+          .footerlinks{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            /*border: 2px solid red;*/
+            margin: 0.7vw;
+            padding: 0.7vw;
+            text-decoration: none;
+          }
+
+          .Fs{
+            /*border: 2px solid red;*/
+            margin: 1.4vw;
+            color: black;
+          }
+
+          
+
+          @media only screen and (max-width: 700px){
+            .footerlinks {
+              width: 100%;
+              margin: 1vw;
+            }
+          }
+
+
+          .accordion {
+            background-color: rgb(250, 249, 246); 
+            opacity: 0.91;    
+            cursor: pointer;
+            padding: .2vw .5vw .2vw .5vw;
+            width: 100%;
+            /*border: 2px solid red;*/
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            color: black;
+          }
+
+
+          .panel {
+            padding: 0px 20px;
+            display: none;
+            background-color: none;
+            overflow: hidden;
+            color: #000000;
+            /*border-radius: 2vw;*/
+            padding: 0.5vw;
+          }
+
+
+          body{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 15px;
+          }
+
+          *{
+            margin: 0px;
+            border: 0px;
+          }
+
+
+          img{
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            border-radius: 0.4vw;
+          }
+
+          /* Caption text */
+           .caption{
+            text-align: center;
+            color: #595959; 
+            /*border: 2px solid blue;*/
+            height: auto; 
+            font-size: 3vw;     
+            padding: 0vw 0vw 5vw 0vw;
+            }
+
+          .pics{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 27vw;
+            /*border: 2px solid red;*/
+          }
+
+
+          /* Fading animation */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 4s;
+            animation-name: fade;
+            animation-duration: 4s;
+            /*border: 5px solid green;*/
+            width: 100%;    
+          }
+
+          /*@-webkit-keyframes fade {
+            from {opacity: .0} 
+            to {opacity: 1}
+          }
+
+          @keyframes fade {
+            from {opacity: 0} 
+            to {opacity: 1}
+          }*/
+
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+          }
+
+          
+
+          /*scroll bar*/
+          /* width */
+::-webkit-scrollbar {
+  width: .5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b3b3b3; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+        </style>
+
+
+    </head>
+
+
+
+
+    <body>
+    <div class="container">
+
+      <div id="main">
+        <div class="navarea">
+          <div class="topnav" id="myTopnav">
+            <a href="Home.html" class="active">HOME</a>
+            <a href="Projects.html">PROJECTS</a>
+            <a href="Activities.html">ACTIVITIES</a>
+            <a href="Members.html">MEMBERS</a>
+            <a href="Achievments.html">ACHIEVEMENTS</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Donate.html">DONATE</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+          </div>
+        
+
+       <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+       </script>
+  
+
+
+
+  
+        <div class="contentarea">
+          <div class="homeblocks";>
+
+          <div class="bl1"> 
+            <div class="b1pic">
+              <img src="PHI (1).png" alt="team logo"> 
+            </div>
+            <div class="b1tex">
+              <b>Alpha Team<br><div class="b1subtitle">Pyramids Higher Institute for Engineering and technology</div><div class="b1subtitle2">Today's innovations shape a better future</div></b>
+            </div>
+          </div>
+
+
+
+          <div class="bl2">
+            <div class="b2text">
+                    <p>The Alpha Team is a student-run group of motivated undergraduate and graduate students from the Pyramids Higher Institute for Engineering and Technology. From Mechatronics engineering department and Electronics and communication engineering department, the diverse group shares a common passion for creating inovative projects.
+                    <br><br>The team aims to learn critical skills, encourage collaborative teamwork, focus on robotics competitions, and explore new technology.</p>
+            </div>
+
+            <div class="b2image">
+            <div class="b2pic">
+              <img src="robot arm drawing.png" alt="robot arm"> 
+            </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="bl3">
+            <headd>
+	<div>
+		<h11>Explore our innovations...</h11>
+	</div>
+</headd>
+<main>
+	<ul id="cards">
+		<li class="card" id="card_1">
+			<div class="card__content">
+				<div>
+					<h22>warehouse Mobile Manipulator</h22>
+					<pp>Oct 2023 - Jun 2024<br>Design and development of a warehouse Mobile Manipulator...</pp>
+					<pp><a href="#top" class="btn btn--accent">Read more</a></pp>
+				</div>
+				<figure>
+					<img src="Warehouse Manipulator.jpg" alt="Image description">
+				</figure>
+			</div>
+		</li>
+
+
+		<li class="card" id="card_2">
+			<div class="card__content">
+				<div>
+					<h22>CleanTouch: Ensuring Safe Environments in Schools</h22>
+					<pp>Nov 2020 - Dec 2020<br>The second iteration of the sterilization machine was specifically designed for middle schools.</pp>
+					<pp><a href="#top" class="btn btn--accent">Read more</a></pp>
+				</div>
+				<figure>
+					<img src="ver. 010.png" alt="Image description">
+				</figure>
+			</div>
+		</li>
+
+
+		<li class="card" id="card_3">
+			<div class="card__content">
+				<div>
+					<h22>SafeHands: School Hand Sterilization System</h22>
+					<pp>Aug 2020 - Nov 2020<br>A sterilization machine that is used for cleaning hands is a necessity in schools to offer the safest possible environment for students.</pp>
+					<pp><a href="#top" class="btn btn--accent">Read more</a></pp>
+				</div>
+				<figure>
+					<img src="ver. 020.jpg" alt="Image description">
+				</figure>
+			</div>
+		</li>
+
+
+		<li class="card" id="card_4">
+			<div class="card__content">
+				<div>
+					<h22>Advanced PIC16F877A Development Board with Dual EEPROM</h22>
+					<pp>Apr 2022 - May 2022<br>Enhanced development board that features two EEPROM memories, depends on PIC16F877A microcontroller.</pp>
+					<pp><a href="#top" class="btn btn--accent">Read more</a></pp>
+				</div>
+				<figure>
+					<img src="development board.jpg" alt="Image description">
+				</figure>
+			</div>
+		</li>
+
+
+
+	</ul>
+</main>
+<aside>
+	
+</aside>
+          </div>
+
+
+
+
+
+          <div class="bl4">
+            <div class="bl4title"><h11>SPONSORS</h11></div>
+                    <div class="M3block">
+                        <div class="M3bimage">
+                            <img src="PHI (1).png" alt="sponsor logo">
+                        </div>
+
+                        <div class="M3btext">
+                          Contact Us 
+                        </div>
+                    </div>
+               
+                    <div class="M3block">
+                        <div class="M3bimage">
+                            <img src="PHI (1).png" alt="sponsor logo">
+                        </div>
+
+                        <div class="M3btext">
+                          Contact Us 
+                        </div>
+                    </div>
+              
+                    <div class="M3block">
+                        <div class="M3bimage">
+                            <img src="PHI (1).png" alt="sponsor logo">
+                        </div>
+
+                        <div class="M3btext">
+                            Contact Us 
+                        </div>
+                    </div>
+
+                </div>  
+             </div>
+        </div>
+
+
+
+
+
+
+        <div class="bl5">
+          <h11>RECENT ACTIVITIES</h11>
+          <section class="cards-wrapper">
+          
+          <div class="cardd-grid-space">
+            <div class="num">01</div>
+            <a class="cardd" href="#top" style="--bg-img: url('circuit signal.jpg')">
+              <div>
+                <h1>LEADERS MEATING</h1>
+                <p>Group leaders and team leader meet to discuss expansion plans. Press to read more…</p>
+                <div class="date">20 Jul, 2024</div>
+                <div class="tags">
+                  <div class="tag">Meating</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          
+          <div class="cardd-grid-space">
+            <div class="num">02</div>
+            <a class="cardd" href="#top" style="--bg-img: url('graduation celebration.jpg')">
+              <div>
+                <h1>GRADUATION CELEBRATION</h1>
+                <p>The nice shots at the nice times…</p>
+                <div class="date">6 Jul, 2024</div>
+                <div class="tags">
+                  <div class="tag">Photos</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          
+          <div class="cardd-grid-space">
+            <div class="num">03</div>
+            <a class="cardd" href="#top" style="--bg-img: url('green circuit 2.jpg')">
+              <div>
+                <h1>PCB DESIGN WORKSHOP</h1>
+                <p>Improving skills in PCB design and ECAD software…</p>
+                <div class="date">3 May, 2024</div>
+                <div class="tags">
+                  <div class="tag">Workshop</div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+        </section>
+          </div>
+
+
+
+
+
+        <div class="footerarea">
+          <div class="footerlinksarea">
+
+            <div class="footerlinks">
+              <button class="accordion">About</button>
+              <div class="panel">
+                Est. 2017, Alpha Team is a student-run group of motivated undergraduate and graduate students from the Pyramids Higher Institute for Engineering and Technology. <br>        
+                For more information, please click <a href="About.html">About</a></p>
+              </div>
+            </div>
+
+            <div class="footerlinks">
+              <button class="accordion">Projects</button>
+              <div class="panel">
+                To explore the overall projects, please go to projects section from <a href="Projects.html">here</a>
+              </div>
+            </div>
+
+            <div class="footerlinks">
+              <button class="accordion">Members</button>
+              <div class="panel">
+                Know our team members and their achievments. Please click <a href="Members.html"> here</a>
+              </div>
+            </div>
+            
+
+            <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+              
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+            </script>
+          </div>
+
+          <div class="footersubtext">
+            <div class="Fs">
+              ALPHA TEAM<br>
+              Pyramids Higher Institution for Engineering and technology (PHI)<br>
+              6th of October City, Giza, Egypt<br>
+            </div>
+
+
+            <div class="Fs">
+              Contact us<br>
+              Send an E-mail from <a href="https://ahmed.m.a.seleem@gmail.com">Here</a><br>
+              Mobile: +20 100 131 5258
+            </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+
+
+    </div>
+    </body>
+</html>

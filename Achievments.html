@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <title>Alpha Team Projects</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="modern electronic circuits produced and designed by Electron Group. We offer other devices that we import, such as submarine motors.">
+        <meta name="keywords" content="Electrons, Electronics, boards, motor, submarine, submarine motors, circuits, Arduino, relay, relay module, Electrons group, microcontrollers, AVR, Avr, AVR programmer, Avr programmer, ASP, ESP, breadboards, batteries, LEDs, resistors, capacitors, volt regulator, programable electronic board, custom electronic boards, PCB, PCB design, electronic boards design, PCB in Egypt">
+        <meta name="author" content="Alpha Team">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+
+
+
+        <style>
+
+          .container{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "nav"
+            "content"
+            "footer"
+            ;
+          }
+          
+          .navarea{
+            grid-area: nav;
+            margin: 0vw;
+            /*opacity: 0.91;
+            border: 2px solid red*/
+          }
+
+          .topnav {
+            overflow: hidden;
+            background: rgb(250, 249, 246);
+            opacity: 81%;
+            /*border: 2px solid red;*/
+            margin: 0px;
+            position: fixed;
+            width: 100%;
+          }
+
+
+          .topnav a {
+            float: left;
+            /*display: block;*/
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 5px 10px;
+            margin-left: 3vw;
+            text-decoration: none;
+            font-size: 17px;
+            /*border: 2px solid blue;*/
+          }
+
+          .topnav a:hover{
+            /*background: #333333;*/
+            color: #e6e6e6;
+          }
+
+
+          .topnav a.active {
+            background-color: none;
+            color: #000000;
+            font-size: 17px;
+
+            /*border-bottom: 1px solid #b3b3b3;*/
+            /*text-decoration: underline;*/
+          }
+
+          .topnav .icon {
+            display: none;
+          }
+
+          @media screen and (max-width: 800px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+              float: right;
+              display: block;
+            }
+          }
+
+          @media screen and (max-width: 800px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+
+            .topnav.responsive a {
+              float: none;
+              display: block;
+              text-align: left;
+            }
+          }
+
+
+          .contentarea{
+            grid-area: content;
+           /* border: 2px solid black;*/
+            padding: 0.6vw 0vw 0vw 0vw;
+          }
+
+          @media screen and (max-width: 800px) {
+            .contentarea{padding: 8vw 0vw 0vw 0vw;}
+          }
+
+          .homeblocks{
+            display: grid;
+            grid-template-areas: 
+            "block1"
+            "block2"
+            "block3"
+            "block4"
+            "block5";
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+          }
+
+          .bl1{
+            grid-area: block1;
+            height: auto;
+            display: flex;
+            border-bottom: 1px solid #737373;
+            margin: 1vw;
+            justify-content: center;
+          }
+
+
+          .b1pic{
+            height: 15vw;
+            width: auto;
+            /*border: 2px solid black;*/
+          }
+
+
+          .b1tex{
+            height: auto;
+            width: auto;
+            /*border: 2px solid green;*/
+            color: #000000;
+            font-family: "Bigshot One",serif;
+            font-size: 2vw;
+            font-weight: 100;
+            font-style: normal; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+
+          @media screen and (max-width: 800px) {
+            .b1text{font-size: 4vw;}
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+            .bl2{
+               grid-area: block2;
+               height: auto;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+               /*background: #c8e9ce;
+               border: 2px solid blue;*/
+               height: auto;
+               padding: 0vw 3vw 0vw 3vw;
+               margin-bottom: 10vw;
+
+            }
+
+            .b2title{
+              width: 100%;
+              /*border: 2px solid red;*/
+              float: right;
+              display: grid;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: medium;
+            }
+
+
+            .b2box{
+            width: 22%;
+            height: auto;
+            /*border: 2px solid green;*/
+            color: #000000;
+            display: grid;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+            float: right;
+            margin: 5vw;
+            box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
+          }
+
+
+          .b2image{
+            height: auto;
+            /*border: 2px solid yellow;*/
+            justify-items: center;  
+            border-radius: 0vw;        
+          }
+
+          .b2name{
+            width: auto;
+            height: auto;
+            text-align: left;
+            color: #000000;
+            /*border: 2px solid blue;*/
+            display: flex;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            font-weight: 100;
+            font-style: normal;
+            margin-top: 1vw;
+            padding-left: 1vw;
+          }
+
+          .b2cardtitle{
+            width: auto;
+            height: auto;
+            text-align: left;
+            color: #a0a0a0;
+            /*border: 2px solid blue;*/
+            display: flex;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+            font-weight: 100;
+            font-style: normal;
+            margin-top: 0vw;
+            padding-left: 1vw;
+          }
+
+          .b2discrip{
+            width: auto;
+            height: auto;
+            text-align: left;
+            color: #a0a0a0;
+            /*border: 2px solid blue;*/
+            display: flex;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:small;
+            font-weight: 100;
+            font-style: normal;
+            margin-top: 1vw;
+            padding-left: 1vw;
+          }
+
+          .button{
+            width: auto;
+            background-color: #737373;
+            color: white;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: medium;
+            font-weight: 100;
+            font-style: normal;
+            margin: 2vw;
+            padding-top: .5vw;
+            padding-bottom: .5vw;
+          }
+
+          .button:hover {
+  background-color: #e2e2e2;
+}
+
+@media only screen and (max-width: 500px) {
+            .b2box {width: 100%;}
+          }
+
+
+
+
+          .bl3{
+            grid-area: block3;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 1vw;
+            padding-top: 5vw;
+            width: 100%;
+            /*border: 1px solid #737373;*/
+          }
+
+
+
+          .footerarea{
+            grid-area: footer;
+            /*border: 2px solid red;*/
+            padding: 1vw 2vw 4vw 2vw;
+            background-color: rgb(250, 249, 246);
+            /*opacity: 0.91;*/
+          }
+
+          .footerlinksarea{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            /*border: 2px solid black;*/
+            margin: 2px;
+          }
+
+          .footersubtext{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #000000;
+            padding: 3vw 0vw 0vw 0vw ;
+            margin: 2px;
+          }
+          
+          .footerlinks{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            /*border: 2px solid red;*/
+            margin: 0.7vw;
+            padding: 0.7vw;
+            text-decoration: none;
+          }
+
+          
+          
+
+          @media only screen and (max-width: 700px){
+            .footerlinks {
+              width: 100%;
+              margin: 1vw;
+            }
+          }
+
+
+          .accordion {
+            background-color: rgb(250, 249, 246); 
+            opacity: 0.91;    
+            cursor: pointer;
+            padding: .2vw .5vw .2vw .5vw;
+            width: 100%;
+            /*border: 2px solid red;*/
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            color: black;
+          }
+
+
+          .panel {
+            padding: 0px 20px;
+            display: none;
+            background-color: none;
+            overflow: hidden;
+            color: #000000;
+            /*border-radius: 2vw;*/
+            padding: 0.5vw;
+          }
+
+
+          body{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 15px;
+          }
+
+          *{
+            margin: 0px;
+            border: 0px;
+          }
+
+
+          img{
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            border-radius: 0.4vw;
+          }
+
+          /* Caption text */
+           .caption{
+            text-align: center;
+            color: #595959; 
+            /*border: 2px solid blue;*/
+            height: auto; 
+            font-size: 3vw;     
+            padding: 0vw 0vw 5vw 0vw;
+            }
+
+          .pics{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 27vw;
+            /*border: 2px solid red;*/
+          }
+
+
+          /* Fading animation */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 4s;
+            animation-name: fade;
+            animation-duration: 4s;
+            /*border: 5px solid green;*/
+            width: 100%;    
+          }
+
+         
+
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+          }
+
+          
+
+          /*scroll bar*/
+          /* width */
+::-webkit-scrollbar {
+  width: .5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b3b3b3; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+        </style>
+
+
+    </head>
+
+
+
+
+    <body>
+    <div class="container">
+
+      <div id="main">
+        <div class="navarea">
+          <div class="topnav" id="myTopnav">
+            <a href="Home.html" class="active">HOME</a>
+            <a href="Projects.html">PROJECTS</a>
+            <a href="Activities.html">ACTIVITIES</a>
+            <a href="Members.html">MEMBERS</a>
+            <a href="Achievments.html">ACHIEVEMENTS</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Donate.html">DONATE</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+          </div>
+        
+
+       <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+       </script>
+  
+
+
+
+  
+        <div class="contentarea">
+          <div class="homeblocks";>
+
+          <div class="bl1"> 
+            <div class="b1pic">
+              <img src="PHI (1) 2.png" alt="team logo"> 
+            </div>
+            
+          </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="bl2">
+        <div class="b2title"><h1>Meet Our Team</h1><p>shdjlsnfjsdfkn</p></div>
+        
+        
+        </div>
+
+
+
+
+
+        <div class="footerarea">
+          <div class="footerlinksarea">
+
+            <div class="footerlinks">
+              <button class="accordion">About</button>
+              <div class="panel">
+                <p>Electron Group works to spread more knowledge of electronics, helps youth to innovate and use modern technology. which contributes to creating an advanced society capable of keeping pace with development technological changes.</p> <br>
+                <p>At this site, we offer a set of electronic elements, a set of imported electronic parts. We also offer videos on the YouTube platform, through which we explain some applications that can benefit students or children interested in innovation.</p> <br>        
+                For more information, please click <a href="About.html">About</a></p>
+              </div>
+            </div>
+
+            <div class="footerlinks">
+              <button class="accordion">Projects</button>
+              <div class="panel">
+                <p>Electron group produces programmed, reprogrammable electronic circuits and others for general tasks, which makes it easier for you to start your projects and go to the horizon.</p><br>
+                <p>To ensure your comfort, we have to offer you many electronic components that you will need to complete your projects. also,  imported components that were not locally available.</p><br>
+                What are you waiting for? <a href="Products.html">Explore more</a> and get creative.
+              </div>
+            </div>
+
+            <div class="footerlinks">
+              <button class="accordion">Members</button>
+              <div class="panel">
+                <p>Electron group provides you with electronic solutions for your projects. so you can complete your project easily in a short time.</p><br>
+                <p>As a team looking to cooperating with you, we offer you many services such as project models using electronic components and circuits, as well as information on all elements.</p><br>
+                <p>There is our <a href="https://www.youtube.com/watch?v=3z8gZuR0808"; style="cursor: pointer;">youtube</a> channel and our <a href="https://www.facebook.com/profile.php?id=100025898572521"; style="cursor: pointer;">Facebook page</a>, enjoy and learn smart.</p>
+              </div>
+            </div>
+            
+
+            <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+              
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+            </script>
+          </div>
+
+          <div class="footersubtext">
+            <div class="Fs">
+              ALPHA TEAM<br>
+              Pyramids Higher Institution for Engineering and technology (PHI)<br>
+              6th of October City, Giza, Egypt<br>
+            </div>
+
+
+            <div class="Fs">
+              Contact us<br>
+              Send an E-mail from <a href="https://ahmed.m.a.seleem@gmail.com">Here</a><br>
+              Mobile: +20 100 131 5258
+            </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+
+
+    </div>
+    </body>
+</html>
